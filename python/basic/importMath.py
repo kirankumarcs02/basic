@@ -1,8 +1,8 @@
-# Definition of radius
-r = 0.43
-
 # Import the math package
 import math
+
+# Definition of radius
+r = 0.43
 
 # Calculate C
 C = 0

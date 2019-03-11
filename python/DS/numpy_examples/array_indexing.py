@@ -10,3 +10,5 @@ bool_idx = (a > 2)
 print('bool_idx = ',bool_idx)
 print('a[bool_idx',a[bool_idx])
 print('a[a > 2]',a[a > 2])
+
+print('multiply',a*bool_idx)

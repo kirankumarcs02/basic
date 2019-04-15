@@ -12,7 +12,7 @@ result = tf.multiply(x1, x2)
 
 # Print the result
 print(result)
-
+writer = tf.summary.FileWriter('./graphs', tf.get_default_graph())
 # initialize the session
 sess = tf.Session()
 
@@ -20,7 +20,9 @@ sess = tf.Session()
 print('x1 = ', sess.run(x1))
 print('x2 = ', sess.run(x2))
 print('result = ',sess.run(result))
+writer = tf.summary.FileWriter('./graphs', sess.graph)
 
+writer.close()
 # Close the session
 sess.close()
 

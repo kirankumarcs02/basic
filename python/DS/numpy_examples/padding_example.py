@@ -52,3 +52,7 @@ plt.show()
 
 x_pad = np.pad(x, ((1,1), (0,0), (0,0)), 'maximum')
 print('maximum x_pad =',x_pad)
+
+print('x[0,:,:] = ', x[0,:,:])
+print('x[0] = ', x[0])
+print('x[:,:,0] = ', x[:,:,0])

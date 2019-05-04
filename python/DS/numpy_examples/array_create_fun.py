@@ -1,4 +1,7 @@
 import numpy as np
+from numpy.random import randint
+from numpy import argmax
+from keras.utils.np_utils import to_categorical
 
 a = np.zeros((2,2))
 print("Zeros array a = ",a)
@@ -19,3 +22,13 @@ print("Arrange array f = ", f)
 
 g = np.linspace(0, 10, 5)
 print("G = ",g)
+
+z = np.zeros((360, 1232))
+print(z)
+
+
+k = 8
+n = 20
+x = randint(0, k, (n,))
+print(x)
+print((to_categorical(x, k)))

@@ -4,7 +4,6 @@ from collections import deque
 import os
 
 
-
 def main():
     cap = cv2.VideoCapture(0)
     LOWER_RED = np.array([160, 20, 70])
@@ -44,6 +43,7 @@ def main():
         k = cv2.waitKey(50)
         if k == 75:
             break
+
 
 if __name__ == '__main__':
     main()

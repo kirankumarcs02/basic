@@ -23,3 +23,7 @@ def example2():
     # x+=6
 
 example2()
+
+test = 'akk'
+print(test[2:0:-1])
+print("test = ", test[1::-1] == test[0:])
